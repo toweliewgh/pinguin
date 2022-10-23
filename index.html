@@ -11,21 +11,32 @@
 
         
         <div class="pinguin">
-            <div class="pinguin-top">
+            <div class="pinguin-face">
                 <div class="right-eye"></div>
                 <div class="left-eye"></div>
                 <div class="nose"></div>
             </div>
-            <div class="pinguin-center">
-                <div class="body"></div>
-                <div class="belly1"></div>
-                <div class="belly2"></div>
+                 <!-- to jest de facto pinguin container -->
+            <div class="pinguin-body">
+                <!-- dobra, teraz rozumiem, ze jest to body pingwina, musi byc klasa pinguin-body, bo wygląda to bardzo zle -->
+                <div class="belly">
+                    <div class="belly1"></div>
+                    <div class="belly2"></div>
+                <!--to też nie jest dobre nazewnictwo, nazwy klas są bardzo ważne, twórz je wyobrażając sobie, że przyjdzie 
+                    kiedyś ktoś inny extendować Twój kod - jak długo będzie musiał zastanawiać się do czego dana klasa służy? 
+                    załóż, że nie będzie w ogóle odpalał wizualizacji, kod powinien być przejrzysty bez kompilowania go -->
+            </div>
+            </div>
+                
                 <div class="right-hand"></div>
                 <div class="left-hand"></div>
-            </div>
-            <div class="pinguin-bottom">
+                <!-- aby jeszcze bardziej zoptymalizować łączone style możesz zrobić tak:
+                <div class="hand right-hand"></div>
+                <div class="hand left-hand"></div>
+                w ten sposób CSS będzie bardziej przejrzysty -->
                 <div class="right-foot"></div>
                 <div class="left-foot"></div>
+                <!-- to samo co z łapkami, i pewnie teraz już wiesz że to samo tez z oczkami -->
             </div>
         </div>
    

@@ -8,14 +8,19 @@ body {
     background-color: aqua;
 }
 
-.body {
+.pinguin {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pinguin-body {
     height: 400px;
     width: 300px;
     background-color: rgb(30, 29, 29);
-    position: relative;
-    margin: auto;
     margin-top: 150px;
-    border-radius: 50% 50% 35% 35%;    
+    border-radius: 50% 50% 35% 35%;
+    position: absolute;
+    left: 150px;
 }
 
 .right-hand, .left-hand {
@@ -26,6 +31,8 @@ body {
     margin: auto;
     border-radius: 50%;
 }
+
+/* style się pokrywają dla left i right hand i to super, że je połączyłeś */
 
 .left-hand {
     left: 120px;
@@ -39,18 +46,22 @@ body {
     transform: rotate(38deg);
 }
 
+.belly {
+    position: absloute;
+    left: 150px;
+    top: 0px;
+}
+
 .belly1 {
     height: 300px;
     width: 120px;
     background-color: white;
     position: absolute;
-    margin: auto;
-    left: 300px;
-    top: 200px;
+    left: 147px;
+    top: 75px;
     border-radius: 50% 50% 0% 100% / 40% 15% 0% 60%;
     transform: rotateY(180deg);
-
- 
+    /* fajnie, że robisz sobie transform, ale jakbyś to zrobił bez niego? */
 }
 
 .belly2 {
@@ -58,9 +69,10 @@ body {
     width: 120px;
     background-color: white;
     position: absolute;
-    margin: auto;
-    left: 180px;
-    top: 200px;
+    /* margin: auto;
+    kiedy masz position absolute marigin nie działa */
+    left: 27px;
+    top: 75px;
     border-radius: 50% 50% 0% 100% / 40% 15% 0% 60%;
 }
 
