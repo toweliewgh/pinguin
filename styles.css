@@ -12,7 +12,8 @@ body {
     height: 400px;
     width: 300px;
     background-color: rgb(30, 29, 29);
-    position: relative;
+    position: absolute;
+    left: 150px;
     margin: auto;
     margin-top: 150px;
     border-radius: 50% 50% 35% 35%;    
